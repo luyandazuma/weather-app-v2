@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
   margin: 50px auto;
   padding: 30px;
@@ -37,7 +37,8 @@ header {
 .search-button {
   padding: 10px;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #98c5e9;
+  font-size: 15px;
+  background-color: #80bff1;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -48,7 +49,7 @@ header {
 }
 
 .search-button:hover {
-  background-color: #69a9dd;
+  background-color: #4997d6;
   cursor: pointer;
 }
 
@@ -60,25 +61,44 @@ header {
 h1 {
   font-size: 36px;
   font-weight: 700;
+  color: #4b4b4b;
 }
 
 h2 {
   font-size: 30px;
+  color: #4b4b4b;
   margin: 0;
 }
 
 .current-icon {
-  font-size: 40px;
+  font-size: 45px;
   position: relative;
   top: -10px;
   right: -30px;
 }
 
 .current-weather-details {
-  font-size: 14px;
-  color: #044377;
+  font-size: 16px;
+  color: #0443779f;
   line-height: 1.6;
   position: relative;
-  top: 80px;
+  top: 60px;
   right: 35px;
+}
+
+.highlights {
+  font-weight: bold;
+  color: #044377;
+}
+
+footer {
+  font-size: 13px;
+  color: #4b4b4b;
+  text-align: center;
+  border-top: 1px solid rgba(221, 234, 245, 0.5);
+}
+
+.links {
+  color: #3b85c2;
+  text-decoration: none;
 }
