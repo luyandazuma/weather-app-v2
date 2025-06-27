@@ -4,13 +4,23 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100, "YTLC" 500;
+  background-color: #edf2f7;
 }
 
 .container {
   max-width: 500px;
   width: 100%;
   margin: 50px auto;
-  border: 1px solid black;
+  padding: 30px;
+  border-radius: 15px;
+  display: block;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgba(221, 234, 245, 0.5);
 }
 
 .search-input {
@@ -40,4 +50,35 @@ body {
 .search-button:hover {
   background-color: #69a9dd;
   cursor: pointer;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.current-icon {
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  right: -30px;
+}
+
+.current-weather-details {
+  font-size: 14px;
+  color: #044377;
+  line-height: 1.6;
+  position: relative;
+  top: 80px;
+  right: 35px;
 }
