@@ -4,45 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Search for a city" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Cape Town</h1>
-      <div>
-        <h2>20°C</h2>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search for a city"
+            required
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <h1>Cape Town</h1>
+        <div>
+          <h2>20°C</h2>
+          <p>
+            ⛅ <br />
+            Feels like 18°C
+          </p>
+        </div>
+        <div>
+          <p>
+            Tuesday 15:32 <br />
+            cloudy <br />
+            Humidity: 55% <br />
+            Wind: 19 km/h
+          </p>
+        </div>
+      </main>
+      <footer>
         <p>
-          ⛅ <br />
-          Feels like 18°C
+          This project was coded by
+          <a href="https://github.com/luyandazuma" target="_blank"
+            >Luyanda Zuma</a
+          >
+          , is open-sourced on
+          <a
+            href="https://github.com/luyandazuma/weather-app-v2"
+            target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="" target="_blank">Netlify.</a>
         </p>
-      </div>
-      <div>
-        <p>
-          Tuesday 15:32 <br />
-          cloudy <br />
-          Humidity: 55% <br />
-          Wind: 19 km/h
-        </p>
-      </div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/luyandazuma" target="_blank"
-          >Luyanda Zuma</a
-        >
-        , is open-sourced on
-        <a href="https://github.com/luyandazuma/weather-app-v2" target="_blank"
-          >GitHub</a
-        >
-        and hosted on
-        <a href="" target="_blank">Netlify.</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
