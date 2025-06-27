@@ -1,10 +1,10 @@
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100, "YTLC" 500;
-  background-color: #edf2f7;
+  font-variation-settings: "wdth" 100;
+  background-color: #edf2f8;
 }
 
 .container {
@@ -15,6 +15,7 @@ body {
   border-radius: 15px;
   display: block;
   background-color: #fff;
+  box-shadow: 0px 30px 50px rgba(82, 124, 158, 0.3);
 }
 
 header {
@@ -26,17 +27,17 @@ header {
 .search-input {
   padding: 10px;
   font-size: 15px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 10px;
-  width: 60%;
+  width: 70%;
   border: none;
-  background-color: #ddeaf5;
+  background-color: #ebf2f8;
   border-radius: 10px;
 }
 
 .search-button {
   padding: 10px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   background-color: #80bff1;
   border: none;
@@ -59,22 +60,29 @@ header {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   color: #4b4b4b;
 }
 
-h2 {
-  font-size: 30px;
+.current-temp-value {
+  font-size: 40px;
+  font-weight: bold;
   color: #4b4b4b;
   margin: 0;
 }
 
-.current-icon {
-  font-size: 45px;
+.current-temp-unit {
+  font-size: 20px;
   position: relative;
-  top: -10px;
-  right: -30px;
+  top: -15px;
+}
+
+.current-temp-icon {
+  font-size: 60px;
+  position: relative;
+  top: 10px;
+  right: -40px;
 }
 
 .current-weather-details {
