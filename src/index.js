@@ -28,13 +28,31 @@ function updateWeatherInfo(response) {
   conditionElement.innerHTML = response.data.condition.description;
 
   let humidityElement = document.querySelector("#weather-humidity");
-  humidityElement.innerHTML = response.data.temperature.humidity + "%";
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 
   let windElement = document.querySelector("#weather-wind");
-  windElement.innerHTML = response.data.wind.speed + "km/h";
+  windElement.innerHTML = `${response.data.wind.speed} km/h`;
 
   let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = Math.round(response.data.temperature.feels_like) + "°C";
+  feelsLikeElement.innerHTML = `${Math.round(response.data.temperature.feels_like)} °C`;
+
+  let timeElement = document.querySelector("#time-day");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = dateFormat(date);
 }
+
+function dateFormat(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${day}, ${hours}:${minutes}`;
+}
+
 
 searchCity("Durban");
