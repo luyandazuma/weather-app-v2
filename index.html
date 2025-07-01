@@ -30,9 +30,9 @@
       <main>
         <div class="current-weather">
           <div class="current-temp-details">
-            <h1>Cape Town</h1>
+            <h1 class="city" id="city"></h1>
             <p>
-              <span class="current-temp-value"> 20</span>
+              <span class="current-temp-value" id="current-temp-value"></span>
               <span class="current-temp-unit">°C</span><br />
               <span class="current-temp-icon">⛅</span>
             </p>
@@ -40,9 +40,10 @@
           <div>
             <p class="current-weather-details">
               Tuesday, 15:32 <br />
-              Condition: <span class="highlights">cloudy</span><br />
-              Humidity: <span class="highlights">55%</span><br />
-              Wind: <span class="highlights">19 km/h</span>
+              Condition: <span class="highlights" id="weather-condition"></span><br />
+              Humidity: <span class="highlights" id="weather-humidity"></span><br />
+              Wind: <span class="highlights" id="weather-wind"></span><br/> <br/> 
+              Feels like <span class="highlights" id="feels-like"></span>
             </p>
           </div>
         </div>
