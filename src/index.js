@@ -39,6 +39,9 @@ function updateWeatherInfo(response) {
   let timeElement = document.querySelector("#time-day");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = dateFormat(date);
+
+  let iconElement = document.querySelector("#current-temp-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;     
 }
 
 function dateFormat(date) {
@@ -53,6 +56,5 @@ function dateFormat(date) {
 
   return `${day}, ${hours}:${minutes}`;
 }
-
 
 searchCity("Durban");
