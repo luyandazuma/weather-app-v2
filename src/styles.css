@@ -105,6 +105,7 @@ footer {
   color: #4b4b4b;
   text-align: center;
   border-top: 1px solid rgba(221, 234, 245, 0.5);
+  margin-top: 10px;
 }
 
 .links {
@@ -112,12 +113,17 @@ footer {
   text-decoration: none;
 }
 
+.four-day-weather-forecast {
+  display: flex;
+  justify-content: space-around;
+}
+
 .forecast-date {
   color: #4b4b4ba9;
   font-weight: 500;
   text-align: center;
   line-height: 15px;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .forecast-icon {
