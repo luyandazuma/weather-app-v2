@@ -91,7 +91,7 @@ h1 {
   color: #0443779f;
   line-height: 1.6;
   position: relative;
-  top: 40px;
+  top: 60px;
   right: 35px;
 }
 
@@ -104,7 +104,6 @@ footer {
   font-size: 13px;
   color: #4b4b4b;
   text-align: center;
-  border-top: 1px solid rgba(221, 234, 245, 0.5);
   padding-top: 20px;
 }
 
@@ -122,6 +121,7 @@ footer {
   border-radius: 15px;
   background-color: #cfd5e023;
   padding: 15px;
+  margin: 0;
 }
 
 .forecast-date {
