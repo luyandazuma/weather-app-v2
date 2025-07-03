@@ -4,18 +4,18 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  background-color: #edf2f8;
+  background-color: #fff;
 }
 
 .container {
   max-width: 550px;
   width: 100%;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 30px;
   border-radius: 15px;
   display: block;
-  background-color: #fff;
-  box-shadow: 0px 30px 50px rgba(82, 124, 158, 0.3);
+  background-color: #edf2f8;
+  box-shadow: 0px 10px 10px #0000008c;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
   margin: 10px;
   width: 70%;
   border: none;
-  background-color: #ebf2f8;
+  background-color: #cedaeb8c;
   border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@ header {
   padding: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  background-color: #80bff1;
+  background-color: #72afe0;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -105,7 +105,7 @@ footer {
   color: #4b4b4b;
   text-align: center;
   border-top: 1px solid rgba(221, 234, 245, 0.5);
-  margin-top: 10px;
+  padding-top: 20px;
 }
 
 .links {
@@ -118,11 +118,18 @@ footer {
   justify-content: space-around;
 }
 
+.weather-forecast-day {
+  border-radius: 15px;
+  background-color: #cfd5e023;
+  padding: 15px;
+}
+
 .forecast-date {
   color: #4b4b4ba9;
   font-weight: 500;
   text-align: center;
   line-height: 15px;
+  padding-top: 5px;
 }
 
 .forecast-icon {
@@ -136,7 +143,7 @@ footer {
   color: #044377;
   display: flex;
   justify-content: center;
-  margin: 5px 0 20px;
+  margin: 5px 0 10px;
 }
 
 .forecast-max-temp {
@@ -145,5 +152,5 @@ footer {
 }
 
 .forecast-min-temp {
-  color: #044377bd;
+  color: #044377a4;
 }
