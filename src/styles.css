@@ -123,12 +123,12 @@ footer {
   font-weight: 500;
   text-align: center;
   line-height: 15px;
-  padding-bottom: 10px;
 }
 
 .forecast-icon {
-  font-size: 30px;
   text-align: center;
+  max-width: 80px;
+  width: 100%;
 }
 
 .forecast-temperatures {
@@ -136,7 +136,7 @@ footer {
   color: #044377;
   display: flex;
   justify-content: center;
-  margin: 10px 0 20px;
+  margin: 5px 0 20px;
 }
 
 .forecast-max-temp {
