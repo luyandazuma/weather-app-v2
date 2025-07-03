@@ -43,6 +43,8 @@ function updateWeatherInfo(response) {
 
   let iconElement = document.querySelector("#current-temp-icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  fetchForecast(response.data.city);
 }
 
 function dateFormat(date) {
@@ -66,8 +68,14 @@ function dateFormat(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function fetchForecast(city) {
+  apiKey = "a3f9ff86f4t0ab9cbe395o06803b6fc9";
+  apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
   let forecastHtml = "";
+
   let days = ["Fri", "Sat", "Sun", "Mon"];
   days.forEach(function (day) {
     forecastHtml =
@@ -86,5 +94,5 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-searchCity("Durban");
+searchCity("Cape Town");
 displayForecast();

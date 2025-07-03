@@ -113,7 +113,7 @@ footer {
   text-decoration: none;
 }
 
-.four-day-weather-forecast {
+.weather-forecast {
   display: flex;
   justify-content: space-around;
 }
