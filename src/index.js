@@ -11,8 +11,7 @@ searchElement.addEventListener("submit", displaySearchInput);
 
 function searchCity(city) {
   let apiKey = "a3f9ff86f4t0ab9cbe395o06803b6fc9";
-  let apiUrl =
-    `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(updateWeatherInfo);
 }
 
@@ -34,20 +33,30 @@ function updateWeatherInfo(response) {
   windElement.innerHTML = `${response.data.wind.speed} km/h`;
 
   let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = `${Math.round(response.data.temperature.feels_like)} °C`;
+  feelsLikeElement.innerHTML = `${Math.round(
+    response.data.temperature.feels_like
+  )} °C`;
 
   let timeElement = document.querySelector("#time-day");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = dateFormat(date);
 
   let iconElement = document.querySelector("#current-temp-icon");
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;     
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function dateFormat(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let day = days[date.getDay()];
 
   if (minutes < 10) {
@@ -57,4 +66,25 @@ function dateFormat(date) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastHtml = "";
+  let days = ["Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+    <div class="forecast-date">${day}</div>
+     <div class="forecast-icon">⛅</div>
+     <div class="forecast-temperatures">
+     <div class="forecast-max-temp">25°</div>
+     <div class="forecast-min-temp">18°</div>
+     </div>
+     </div>`;
+  });
+
+  let forecastElement = document.querySelector("#weather-forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Durban");
+displayForecast();
