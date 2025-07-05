@@ -8,7 +8,7 @@ Weather - Isibiko sezulu is a weather web app that provides real-time weather up
 
 # Preview
 
-<img src="src/weather-app-preview.JPG">
+<img src="src/weather-app-preview.JPG" target="_blank" width="400" height="350">
 
 # Tech Stack
 
