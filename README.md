@@ -1,7 +1,8 @@
 # weather-app-v2
 
-Project Name: Weather - Isibiko sezulu
-<a href="https://weatherisibikosezulu.netlify.app/" target="_blank">Live demo</a> of Weather - Isibiko sezulu
+Project Name: Weather - Isibiko sezulu <br/>
+
+<a href="https://weatherisibikosezulu.netlify.app/" target="_blank">Live demo</a> hosted on Netlify.
 
 # Overview
 
