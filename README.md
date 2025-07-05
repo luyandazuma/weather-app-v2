@@ -1,4 +1,4 @@
-# weather-app-v2
+# Project
 
 Project Name: Weather - Isibiko sezulu <br/>
 
