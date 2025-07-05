@@ -4,7 +4,11 @@ Project Name: Weather - Isibiko sezulu
 
 # Overview
 
-Weather - Isibiko sezulu is a weather web app that provides real-time weather updates for cities around the world. The app fetches live data from a weather API and displays current weather conditions in a clean and user-friendly interface.
+Weather - Isibiko sezulu is a weather web app that provides real-time weather updates for cities around the world. The app fetches live data from a weather API and displays current weather condistions in a clean and user-friendly interface.
+
+# Preview
+
+<img src="src/weather-app-preview.JPG">
 
 # Tech Stack
 
