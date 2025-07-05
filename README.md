@@ -1,6 +1,7 @@
 # weather-app-v2
 
 Project Name: Weather - Isibiko sezulu
+<a href="https://weatherisibikosezulu.netlify.app/" target="_blank">Live demo</a> of Weather - Isibiko sezulu
 
 # Overview
 
@@ -8,7 +9,7 @@ Weather - Isibiko sezulu is a weather web app that provides real-time weather up
 
 # Preview
 
-<img src="src/weather-app-preview.JPG" target="_blank" width="400" height="350">
+<img src="src/weather-app-preview.JPG" target="_blank" width="410" height="360">
 
 # Tech Stack
 
@@ -42,7 +43,3 @@ DOM manipulation and dynamic content rendering.
 Responsive design using CSS media queries.
 Writing clean JavaScript code.
 Handling user input and errors gracefully.
-
-# Project Link
-
-Live demo of <a href="https://weatherisibikosezulu.netlify.app/" target="_blank">Weather - Isibiko sezulu</a> hosted on Netlify.
